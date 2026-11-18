@@ -53,7 +53,7 @@ void setup() {
 
   Serial.print("Conectando");
   unsigned long inicio = millis();
-  while (WiFi.status() != WL_CONNECTED && millis() - inicio < 15000) {
+  while (WiFi.status() != WL_CONNECTED && millis() - inicio < 30000) {
     delay(500);
     Serial.print(".");
   }
